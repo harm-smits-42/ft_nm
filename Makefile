@@ -25,9 +25,9 @@ endif
 # --------------- $(CC) --------------- #
 
 MAKE_FILES =
-CFLAGS = -O2 -g
+CFLAGS = -O2
 IFLAGS = -I $(INC_DIR)
-LFLAGS = -lm
+LFLAGS = -lm -lpthread -Wl,--no-as-needed -ldl
 DEPS =
 
 # --------------- Libraries --------------- #

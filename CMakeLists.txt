@@ -8,5 +8,5 @@ add_subdirectory(libft)
 
 file(GLOB_RECURSE SOURCES src/**.c)
 add_executable(ft_nm ${SOURCES})
-target_link_libraries(ft_nm libft)
+target_link_libraries(ft_nm libft ${CMAKE_DL_LIBS} pthread)
 include_directories(inc)
